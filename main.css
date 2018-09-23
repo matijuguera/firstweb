@@ -6,6 +6,7 @@
 body{
     background: url("img/rojo.jpg");
     background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #global{
@@ -26,7 +27,6 @@ body{
     width: 300px;
     background-color: green;
     float: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 45px;
     color: white;
     text-align: center;
@@ -34,7 +34,6 @@ body{
 }
 
 #menu{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
     list-style: none;
     background-color: rgba(75, 75, 75);
@@ -60,4 +59,49 @@ body{
     padding-left: 30px;
     padding-right: 30px;
 
+}
+
+#posts{
+    float: left;
+    width: 60%;
+}
+#posts p{
+    text-align: justify;
+}
+
+#posts h2{
+    float: left;
+}
+
+#posts button{
+    float: right;
+    background-color: green;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
+
+aside{
+    text-align: center;
+    float: right;
+    width: 38%;
+    padding-left: 2%; 
+}
+
+aside h4{
+    background: url("img/lines.png");
+}
+aside p{
+    text-align: justify;
+}
+aside img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+aside h4 span{
+    background: white;
+    padding: 5px;
 }
