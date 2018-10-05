@@ -4,7 +4,7 @@
 }
 
 body{
-    background: url("img/rojo.jpg");
+    background: url("img/hojas.jpg");
     background-attachment: fixed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -66,11 +66,16 @@ body{
     width: 60%;
 }
 #posts p{
+    margin-top: 8px;
     text-align: justify;
 }
 
 #posts h2{
     float: left;
+}
+
+#posts span{
+    color: rgba(75, 75, 75);
 }
 
 #posts button{
@@ -104,4 +109,20 @@ aside img{
 aside h4 span{
     background: white;
     padding: 5px;
+}
+
+footer{
+    height: 47px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    width: 100%;
+    box-shadow: 0px 0px 10px gray;
+    padding: 20px;
+    line-height: 47px;
+    width: 65%;
+    margin: 10px auto;
+}
+
+.bx-viewport, .bx-wrapper{
+    height: 250px !important;
 }
