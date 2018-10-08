@@ -126,3 +126,30 @@ footer{
 .bx-viewport, .bx-wrapper{
     height: 250px !important;
 }
+
+#themeSelector{
+    position: fixed;
+    top: 50%;
+    height: 100px;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.9); 
+}
+
+#toGreen, #toBlue, #toRed{
+    height: 25px;
+    width: 25px;
+    border: 1px solid black;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#toGreen{
+    background-color: forestgreen;
+}
+#toBlue{
+    background-color: steelblue;
+}
+#toRed{
+    background-color: tomato;
+}

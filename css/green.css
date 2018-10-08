@@ -1,0 +1,15 @@
+body{
+    background: url("../img/hojas.jpg");
+}
+
+#title{
+    background-color: forestgreen;
+}
+
+#menu li:hover{
+    background-color: forestgreen;
+}
+
+#posts button{
+    background-color: forestgreen;
+}
