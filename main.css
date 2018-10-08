@@ -153,3 +153,9 @@ footer{
 #toRed{
     background-color: tomato;
 }
+
+#goUp{
+    color: white;
+    float: right;
+    text-decoration: none;
+}
