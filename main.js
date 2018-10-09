@@ -1,11 +1,14 @@
 $(document).ready(function(){
 
+
+
+    //Slider
+    
     $('.slider').bxSlider({
         mode: 'fade',
         captions: true,
         pager: false
       });
-
 
 
     //Theme Selector
@@ -82,6 +85,7 @@ $(document).ready(function(){
         this.before(article);
     })
 
+
     //fake log in
     
     $("section form").submit(function(e){
@@ -108,8 +112,5 @@ $(document).ready(function(){
     })
 
 
-    
 
-
-    
   });
