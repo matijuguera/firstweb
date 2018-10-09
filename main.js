@@ -6,6 +6,30 @@ $(document).ready(function(){
         pager: false
       });
 
+
+
+    //Theme Selector
+    var theme = $('#theme');
+    $("#toRed").click(function(){
+        theme.attr("href", "css/red.css");
+    })
+    $("#toGreen").click(function(){
+        theme.attr("href", "css/green.css");
+    })
+    $("#toBlue").click(function(){
+        theme.attr("href", "css/blue.css");
+    })
+
+    //Scroll up
+    $("#goUp").click(function(e){
+        e.preventDefault();
+        $("html, body").animate({
+            scrollTop: 0
+        }, 500);
+    })
+
+    //add multiple articles
+
     function buildPost(title, date, paragraph){
         return {
             title: title,
@@ -57,5 +81,35 @@ $(document).ready(function(){
 
         this.before(article);
     })
+
+    //fake log in
+    
+    $("section form").submit(function(e){
+        var formUser = $("#formUser").val();
+        localStorage.setItem("formUser", formUser);
+        var formPassword = $("#formPassword").val();
+        localStorage.setItem("formPassword", formPassword);
+
+    })
+
+    if(localStorage.getItem("formUser") != null){
+        $("#logInLink a").html(localStorage.getItem("formUser"));
+        $("#alreadyConnected").css('display', 'inline-block');
+        $("#alreadyConnectedButton").css('display', 'inline-block');
+        $("#logInForm").css('display', 'none');
+    }
+
+    $("#alreadyConnectedButton").click(function(){
+        localStorage.clear();
+        $("#logInLink a").html("Sign Up");
+        $("#alreadyConnected").css('display', 'none');
+        $("#alreadyConnectedButton").css('display', 'none');
+        $("#logInForm").css('display', 'inline-block');
+    })
+
+
+    
+
+
     
   });

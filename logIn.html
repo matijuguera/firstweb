@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My first web page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link id="theme" rel="stylesheet" type="text/css" media="screen" href="css/green.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="themeSelector">
+        <div id="toGreen"></div>
+        <div id="toRed"></div>
+        <div id="toBlue"></div>
+    </div>
+
+    <div id="global">
+        <header>
+            <div id="title">
+                JS PRACTICE
+            </div>
+            <div class="clearFix"></div>
+        </header>
+        <nav>
+            <ul id="menu">
+                <li><a href="main.html">MAIN</a></li>
+                <li><a href="#">CALCULATOR</a></li>
+                <li><a href="#">CLOCK</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li id="logInLink"><a href="logIn.html">LOG IN</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h3 id="alreadyConnected"style="display: none">You are already connected!</h3>
+            <button id="alreadyConnectedButton" style="display: none">Log Out!</button>
+            <div class="clearFix"></div>
+            
+            <form id="logInForm" action="main.html">
+                <h3 id="logIn"><span>Log In</span></h3>
+                <br>
+                <label for="username">Username</label><br>
+                <input type="text" name="username" id="formUser"><br>
+                <label for="mail">E-Mail</label><br>
+                <input type="text" name="mail" id="formMail"><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="formPassword"><br>
+                <br>
+                <input type="submit" name="submit" value="Submit">
+            </form>
+        </section>
+    
+    </div>
+    <footer>
+        Practice web page by Matias Juguera ©
+        <a href="#" id="goUp" >Go to Heaven</a>
+    </footer>
+    
+</body>
+
+</html>
